@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+}
+.dialog-mask{
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top:0;
+    bottom:0;
+ background:rgba(0,0,0,0.5);
+    z-index:2;
+}
+.dialog-list{
+    position:absolute;
+    height: 100%;
+    width: 200px;
+    top:0;
+    right:0;
+    background:#eaffea;
+    /*background: transparent;*/
+    /*border-top: 300px #e4e2e3;*/
+    /*border-bottom:380px #e4e2e3 solid;*/
+    /*border-left: transparent 580px solid;*/
+    /*border-right: 400px;*/
+    /*box-sizing: border-box;*/
+    /*z-index:3;*/
+}
+.dialog-list li:hover{
+    text-decoration:cornflowerblue line-through;
+    color:#33ccff;
+}
+.dialog-list li{
+    margin-top:50px ;
+    margin-left:40px;
+    font-size:16px;
+    transition: color 0.4s ease-in;
+    font-family: 微软雅黑;
+    color: rgb(104, 105, 103);
+    font-weight: bold;
+}

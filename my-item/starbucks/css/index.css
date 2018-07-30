@@ -1,0 +1,480 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+
+/*左侧固定导航栏*/
+.nav{
+    float:left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right:2px solid #979797;
+}
+#header{
+    width: 100%;
+    /*height: 24px;*/
+    overflow:hidden;
+}
+.nav ul{
+    height: 24px;
+    padding: 25px;
+    /*width: 80%;*/
+    float:left;
+    /*box-sizing:border-box;*/
+}
+.nav ul li{
+    float:left;
+    margin-right:25px;
+    font-size:16px;
+    font-weight: bold;
+}
+#header .logo{
+    float:left;
+    width: 40px;
+    height: 40px;
+    color:#00A5FF;
+    padding-top:15px;
+    padding-left:10px;
+}
+#header .logo img{
+    width: 100%;
+}
+ #header #click{
+    float:right;
+     margin-right:20px;
+     padding-top:25px;
+}
+ /*右侧图片栏*/
+.img-box{
+    width: 70%;
+    float:right;
+}
+ .kv1{
+     display: block;
+ }
+.img-box img {
+    width: 100%;
+}
+.kv2{
+    display:none;
+}
+.nav .content {
+    width: 100%;
+    display: table;
+    /*height: calc(100% - 98px);*/
+    height: 220px;
+
+}
+.nav .content ul li{
+    float:none;
+}
+.content .wraper{
+    display: table-cell;
+    vertical-align: middle;
+    /*height: 100px;*/
+    /*margin-top:50px;*/
+    padding: 0 24px 0 84px;
+
+}
+.content .wraper h2{
+    font-weight: bold;
+    padding-left:25px;
+}
+.content .wraper li{
+    /*margin-top:10px;*/
+    color: rgba(0, 0, 0, 0.56);
+    padding: 6px 0;
+    font-size:16px;
+    font-weight: normal;
+}
+.content  .wraper .season{
+    color: #000000;
+    margin-bottom:2px;
+    border-bottom:2px solid green;
+}
+@media screen and (max-width:1180px){
+    #header ul .menu{
+        float:none;
+    }
+}
+@media screen and (max-width:1024px){
+    .img-box{
+        width: 100%;
+    }
+    .img-box img{
+        /*display: block;*/
+        width: 100%;
+    }
+    .nav{
+        position:relative;
+        width: 100%;
+        border:none;
+    }
+    #header ul .menu{
+        float:left;
+    }
+    .content .wraper{
+        padding:0;
+        padding-top:10px;
+    }
+
+    .content .wraper ul li{
+        float:left;
+        display:inline-block;
+    }
+   .nav .content{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .img-box{
+        width: 100%;
+    }
+    .kv2{
+        display:block;
+    }
+    .kv1{
+        display:none;
+    }
+    #header{
+        display:none;
+    }
+    .content .wraper{
+        overflow:hidden;
+        height: 74px;
+        box-sizing:border-box;
+        width: 400px;
+    }
+}
+/*中间栏*/
+.promotion {
+    width: 70%;
+    float:right;
+}
+.promotion .fluid{
+    padding:20px 20px;
+    overflow: hidden;
+    background: #cceadc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.promotion a{
+    display:block;
+    float:left;
+    width: 30%;
+    padding-left:2%;
+    transition: all 0.2s ease;
+    box-sizing:border-box;
+    /*box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);*/
+}
+.promotion a:hover img{
+    margin-top:-2px
+}
+.promotion a img{
+    width: 100%;
+}
+@media screen and (max-width:1024px){
+    .promotion{
+        width: 100%;
+    }
+    .promotion .fluid {
+        width: 100%;
+    }
+    .promotion a{
+        display:block;
+        float:left;
+        width: 30%;
+        padding-left:3%;
+    }
+
+}
+@media screen and (max-width:640px){
+    .promotion a{
+        float:none;
+        width: 100%;
+    }
+}
+/*俱乐部栏*/
+.progrom{
+    width: 80%;
+
+}
+.progrom .wraper{
+    padding:0 10%;
+    width: 100%;
+
+}
+.progrom .progrom1{
+    width: 50%;
+    float:left;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    /*flex: 1;*/
+}
+.progrom .progrom2{
+
+    float: right;
+    width: 50%;
+    /*flex:1;*/
+    padding-top: 45px;
+    padding-bottom: 36px;
+    box-sizing:border-box;
+}
+
+
+.progrom h2{
+    margin-bottom: 18px;
+}
+.progrom p a{
+    color: #C2A661;
+    float:none;
+    display:inline-block;
+}
+.progrom p{
+    word-wrap: break-word;
+    word-break: normal;
+    color: rgba(0, 0, 0, 0.56);
+}
+.progrom .button input{
+    box-sizing: border-box;
+    color: #00A862;
+    padding: 8px 24px;
+    border:1px solid #00A862;
+    outline: none;
+    background: none;
+    border-radius: 48px;
+    margin-top:20px;
+}
+.progrom .progrom2 img{
+    /*width: 80%;*/
+    padding-left: 10%;
+    float:right;
+    height: 72px;
+}
+@media screen and (max-width:1024px){
+    .progrom .wraper{
+        /*display: flex;*/
+        padding:0;
+    }
+    .progrom{
+        width: 100%;
+        padding:0 10%;
+        box-sizing:border-box;
+
+    }
+    .progrom1{
+        width: 50%;
+        /*flex:1;*/
+    }
+    .progrom2{
+        width: 50%;
+        /*flex:1;*/
+    }
+}
+@media screen and (max-width:640px){
+    .progrom .wraper{
+        /*display: none;*/
+    }
+    .progrom{
+        overflow:hidden;
+        /*position:absolute;*/
+    }
+    .progrom .progrom1{
+        float:none;
+        /*padding-left:20%;*/
+        width: 100%;
+
+    }
+    .progrom .progrom2{
+        display: block;
+        float:none;
+        padding-top:0;
+    }
+    .progrom .progrom1 h2, .progrom .progrom1 .button{
+        padding-left:30%;
+    }
+    /*.progrom .progrom1 p{*/
+        /*padding:0 5px;*/
+    /*}*/
+    .progrom .progrom a{
+        /*display: inline-block;*/
+        float:right;
+    }
+    .progrom .progrom2 img{
+        float:none;
+        padding-left:30%;
+
+    }
+}
+/*旗舰店*/
+.tmall{
+    width: 70%;
+    float:right;
+    background: #cceadc;
+}
+.tmall >h2{
+    padding-left:40%;
+    padding-top:30px;
+
+}
+.tmall .text{
+    padding-left:32%;
+    color: rgba(0, 0, 0, 0.56);
+    margin-top:20px;
+
+}
+.tmall .wraper{
+    width: 80%;
+    padding:0 10%;
+}
+.tmall ul li{
+    margin-top:40px;
+    float:left;
+    width: 25%;
+    /*position: relative;*/
+}
+.tmall ul li img{
+    margin-top:-20px;
+    margin-right:30%;
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    width: 40%;
+    float:right;
+}
+.tmall ul li .text1{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background: #ffffff;
+    margin:0 10px;
+    height: 180px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    box-sizing:border-box;
+    transition: all 0.2s;
+}
+.tmall ul li .text1:hover{
+    margin-top:-4px;
+}
+.tmall ul li a h2{
+    padding: 60px 35% 20px 30% ;
+    font-size:16px;
+    white-space: nowrap;
+    color: #000000;
+}
+.tmall ul li a p{
+    text-align:center;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 12px;
+}
+@media screen and (max-width: 1024px){
+    .tmall{
+        width: 100%;
+
+    }
+}
+@media screen and (max-width: 640px){
+    .tmall{
+        width: 100%;
+    }
+    .tmall ul li{
+        width: 50%;
+    }
+    .tmall ul li a  h2{
+        padding-left:40%;
+    }
+}
+
+/*轮播图*/
+.coffee{
+    width: 70%;
+    float:right;
+}
+.coffee-title{
+    padding:20px 0 20px 40%;
+    color: #000000;
+    font-size: 20px;
+}
+.coffee-culture{
+    padding-left:42%;
+}
+.scroll{
+    width: 100%;
+    overflow:hidden;
+    height: 168px;
+    position: relative;
+}
+.scroll .wraper{
+    /*position: absolute;*/
+    width: 150%;
+    height: 168px;
+    padding-left:10%;
+    transition: all 0.3s;
+}
+.scroll ul{
+    width: 100%;
+    height: 140px;
+}
+.coffee ul li{
+    float: left;
+    width: 20%;
+    margin-left:10px;
+    height: 168px;
+}
+ .coffee .scroll11{
+    width: 100%;
+    height: 168px;
+}
+.scroll1{
+    background-size:100% 100%;
+    background:url("../img/coffeehouse-pour-over-kv.jpg") no-repeat center center;
+}
+.scroll2 {
+    /*background-size:contain;*/
+    background:url("../img/coffeehouse-coffee-cultivation-kv.jpg") no-repeat center center;
+}
+.scroll3 {
+    /*background-size:contain;*/
+    background:url("../img/coffeehouse-roast-story-kv.jpg") no-repeat center center;
+}
+.scroll4     {
+    /*background-size:contain;*/
+    background:url("../img/coffeehouse-4-fundamentals-kv.jpg") no-repeat center center;
+}
+.iconleft{
+    position:absolute;
+    top: 50%;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    z-index:2;
+    color: #ffffff;
+    background:#f2f2f2;
+    border-radius:50%;
+    display: none;
+
+}
+.iconleft img, .iconright img{
+margin:10px 8px;
+}
+.iconright{
+    position:absolute;
+    top: 50%;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    z-index:2;
+    color: #ffffff;
+    background:#f2f2f2;
+    border-radius:50%;
+}
