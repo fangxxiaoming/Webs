@@ -1,0 +1,110 @@
+.dialog-mask{
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right: 0;
+    background: rgba(43,49,55,0.9);
+
+}
+.dialog-box{
+    width: 600px;
+    height: 550px;
+    background: #ffffff;
+    position: absolute;
+    left:70%;
+    top:50%;
+    font-size:30px;
+    border-radius:10px;
+    /*margin-top:-150px;
+    margin-left:-200px;*/
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%) ;
+    font-family:Arial;
+    background: url("../images/dialog/bg.jpg");
+}
+.dialog-title,.dialog-title1{
+    margin:48px 0 0 270px;
+}
+.dialog-close{
+    position:absolute;
+    top:20px;
+    right:6px;
+
+}
+.dialog-close img{
+    width: 30px;
+    height: 30px;
+}
+.dialog-password,.dialog-username,.dialog-username1,.dialog-password1,.dialog-email1{
+    margin:40px 0 0 68px;
+    height: 40px;
+    line-height:40px;
+}
+.dialog-password{
+    font-weight: bold;
+}
+.dialog-username input,.dialog-password input{
+    width: 300px;
+    height: 40px;
+    margin-left:40px;
+    border:1px solid rgb(221,221,221);
+}
+.dialog-submit input,.dialog-submit1 input{
+    margin:46px 0 0 200px;
+    width: 200px;
+    height: 40px;
+    line-height:40px;
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+    font-size:30px;
+    border:1px solid rgb(221,221,221);
+    border-radius:10px;
+    color: white;
+    font-size: 20px;
+}
+.dialog-box span{
+    height: 40px;
+    line-height:40px;
+    display:inline-block;
+    width: 145px;
+    font-weight: normal;
+}
+.dialog-username1 input,.dialog-password1 input,.dialog-email1 input{
+    width: 300px;
+    height: 40px;
+    margin-left:25px;
+    border:1px solid rgb(221,221,221);
+}
+.dialog-content{
+    width: 500px;
+    font-size:18px;
+    color:#ff0101;
+    margin:40px 0 0 80px;
+}
+.dialog-forget{
+    float: right;
+    margin: 30px 20px;
+}
+.dialog-forget a{
+    color: darkgreen;
+    font-size: 22px;
+}
+.dialog-introduce{
+    width: 550px;
+    height: 500px;
+    margin-left: 80px;
+    overflow: hidden;
+}
+.dialog-introduce1{
+    margin-left: 80px;
+    margin-top: 100px;
+    font-size: 32px;
+    color: white;
+}
+.dialog-introduce2{
+    margin-left: 80px;
+    margin-top: 100px;
+    font-size: 24px;
+    color: white;
+}
